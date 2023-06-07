@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
   <title>Furniture Landing Page</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     </div>
     <div id="page-feature">
       <p>About us</p>
-      <p>Furniture</p>
+      <div id="dropdown"><p>Furniture</p><img src="./assets/chevron_down.svg"></div>
       <p>Partnerships</p>
       <p>Contact</p>
     </div>
@@ -92,13 +94,33 @@
       </div>
     </section>
     <section id="furniture-recommendation">
-      <div id="furniture-pictures"></div>
+      <div id="furniture-pictures">
+        <div id="interior-1">
+          <img src="./assets/home-interior-1.jpg">
+        </div>
+        <div id="interior-2">
+          <img src="./assets/home-interior-2.jpg">
+        </div>
+        <div id="interior-3">
+          <img src="./assets/home-interior-3.jpg">
+        </div>
+      </div>
       <div id="furniture-details">
         <p>Categories</p>
-        <p>Furniture Sets Recommendations</p>
+        <h1>Furniture Sets Recommendations</h1>
         <div id="category-description">
-          <p>Title</p>
-          <p>Lorem, ipsum</p>
+          <div id="living-room">
+            <h4>Living Room</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem pariatur accusantium ad sequi id sunt quo quis beatae rerum commodi?</p>
+          </div>
+          <div id="home-office">
+            <h4>Home Office</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem pariatur accusantium ad sequi id sunt quo quis beatae rerum commodi?</p>
+          </div>
+          <div id="gaming-room">
+            <h4>Gaming Room</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem pariatur accusantium ad sequi id sunt quo quis beatae rerum commodi?</p>
+          </div>
         </div>
       </div>
     </section>
@@ -106,12 +128,31 @@
       <div id="section-header">
         <div id="title">
           <p>OUR PRODUCTS</p>
-          <p>This month’s best seller</p>
+          <h1>This month’s best seller</h1>
         </div>
-        <div id="see-more">see more</div>
+        <div id="more"><p>see more</p></div>
       </div>
       <div id="product-photos">
-        <!-- photos and buttons -->
+        <div id="prop-1">
+          <img src="./assets/prop-1.jpg">
+        </div>
+        <div id="prop-2">
+          <img src="./assets/prop-2.jpg">
+        </div>
+        <div id="prop-3">
+          <img src="./assets/prop-3.jpg">
+        </div>
+        <div id="prop-4">
+          <img src="./assets/prop-4.jpg">
+        </div>
+      </div>
+      <div id="move-buttons">
+        <div id="before-btn">
+          <img src="./assets/lefticon.svg">
+        </div>
+        <div id="after-btn">
+          <img src="./assets/righticon.svg">
+        </div>
       </div>
     </section>
     <section id="newsletter">
@@ -120,7 +161,7 @@
         <h1>Become a member and get 10% off of your first purchase</h1>
       </div>
       <div id="newsletter-form">
-        <input type="text" placeholder="Enter your email here"></input>
+        <input type="text" placeholder="Enter your email here">
         <img src="./assets/mail.svg">
       </div>
     </section>
